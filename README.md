@@ -16,7 +16,7 @@ is a one-line change.
 
 <img src="icon.png" width="128" alt="Vitae">
 
-# Vitae
+# Vitae: Life Organizer
 
 **The simplest, cleanest, yet most complete way to define and organize your Life.**
 
