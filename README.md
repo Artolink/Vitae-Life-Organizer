@@ -20,7 +20,7 @@ is a one-line change.
 
 **The simplest, cleanest, yet most complete way to define and organize your Life.**
 
-Bilingual. Offline. Yours.
+Customizable. Offline. Yours.
 
 <br>
 
