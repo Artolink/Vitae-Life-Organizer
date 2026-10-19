@@ -1,0 +1,268 @@
+<!--
+  The support page for the public showcase repository, kept here so it
+  lives beside the README it sits next to and changes when the app does.
+
+  It is not served from this repository: this one is private. Copy it into
+  Artolink/Vitae-Life-Organizer as `index.html`, which is what GitHub Pages
+  serves from the root of `main`.
+
+  Both stores require a support address. Play accepts an email; Apple wants
+  a reachable web page, which is why this exists. The URL registered with
+  Apple is https://artolink.github.io/Vitae-Life-Organizer/, so the file
+  must stay at the root and must stay named index.html.
+
+  `icon.png` is a relative link, and the icon it wants is the one already in
+  the public repository's root, beside the README that uses it. Opened from
+  `docs/` here the image is simply missing, which is the file being in the
+  wrong place rather than the link being wrong.
+
+  Bilingual, English first because the listing's default language is en-US.
+  Both versions are in the markup and the switch only hides one, so with
+  JavaScript off the page still answers every question, in both languages.
+
+  Every answer here has to stay true to the app. The ones that name a
+  screen name it as the app does: Settings > Data > Export backup, and
+  Restore the purchase under in-app purchases.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitae: Life Organizer, support</title>
+<meta name="description" content="Support and common questions for Vitae: Life Organizer.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #0B0C0F;
+    --card: #15171C;
+    --text: #F2F4F7;
+    --muted: #98A1AF;
+    --faint: #69707D;
+    --border: #252932;
+    --accent: #8B8AFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 40px; }
+  header img { width: 88px; height: 88px; border-radius: 20px; }
+  h1 { font-size: 26px; margin: 18px 0 6px; letter-spacing: -0.4px; }
+  .tagline { color: var(--muted); margin: 0; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--faint); margin: 44px 0 14px; }
+  h3 { font-size: 17px; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .contact { text-align: center; font-size: 18px; }
+  .muted { color: var(--muted); }
+  kbd {
+    font: inherit;
+    color: var(--text);
+    background: #1D2026;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
+  nav { text-align: center; margin-bottom: 36px; }
+  nav button {
+    font: inherit;
+    color: var(--muted);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  nav button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
+  footer { margin-top: 56px; text-align: center; color: var(--faint); font-size: 14px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <img src="icon.png" alt="Vitae">
+    <h1>Vitae: Life Organizer</h1>
+    <p class="tagline">Support</p>
+  </header>
+
+  <nav hidden id="switch">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="it" aria-pressed="false">Italiano</button>
+  </nav>
+
+  <section id="en" lang="en">
+
+    <div class="card contact">
+      <p>Write to <a href="mailto:farneti.aa@gmail.com">farneti.aa@gmail.com</a></p>
+      <p class="muted">One person reads these, so an answer takes a few days rather than a few minutes. Say which phone you are on and what you were doing, and it will take one exchange instead of three.</p>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <div class="card">
+      <h3>Where is my data kept?</h3>
+      <p>On your phone, and nowhere else. Vitae has no account, no sign-in and no server. Nothing you write is sent anywhere, and that includes the advertiser.</p>
+      <p>The consequence worth knowing: there is no copy to recover from. Take a backup.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I back everything up, or move to a new phone?</h3>
+      <p><kbd>Settings</kbd> &rsaquo; <kbd>Data</kbd> &rsaquo; <kbd>Export backup</kbd> writes a single file and hands it to your phone's share sheet, so you can put it wherever you keep things.</p>
+      <p>On the new phone, the same screen has <kbd>Import backup</kbd>. It replaces what is in the app, so import before you start using it rather than after.</p>
+    </div>
+
+    <div class="card">
+      <h3>I paid to remove the adverts and they are back</h3>
+      <p>Open the in-app purchases screen and tap <kbd>Restore the purchase</kbd>. The purchase belongs to your store account rather than to the phone, so it survives a reinstall, a reset and a new device.</p>
+      <p>If it says nothing was found, you are almost certainly signed in with a different Google or Apple account from the one that paid.</p>
+    </div>
+
+    <div class="card">
+      <h3>My reminders do not arrive</h3>
+      <p>Three things, in the order worth checking:</p>
+      <p>1. Notifications have to be allowed for Vitae in your phone's own settings. A refusal at the first prompt is remembered.</p>
+      <p>2. On Android, a reminder for a precise time also needs <em>Alarms &amp; reminders</em> allowed, under the app's settings. Without it Android delivers the reminder whenever the phone next wakes, which can be an hour late.</p>
+      <p>3. Battery saving. Several manufacturers, Xiaomi, Huawei, Oppo and Samsung among them, stop background apps hard by default. Vitae has to be excluded by hand there.</p>
+    </div>
+
+    <div class="card">
+      <h3>The step counter shows nothing on my Android phone</h3>
+      <p>It is not broken and nothing is wrong with your settings: Android has no way to answer the question. The iPhone keeps a running step count in a chip of its own and can be asked about any past day. Android only counts while something is actively listening, so there is no day's total to read.</p>
+      <p>The app says so on the screen rather than showing a zero, because a zero would read as "you have not moved".</p>
+    </div>
+
+    <div class="card">
+      <h3>Can I change the language?</h3>
+      <p>Vitae follows your phone's language and is written in full in both English and Italian. You can also set it by hand in <kbd>Settings</kbd> &rsaquo; <kbd>Language</kbd>.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I delete everything?</h3>
+      <p><kbd>Settings</kbd> &rsaquo; <kbd>Data</kbd> &rsaquo; <kbd>Reset everything</kbd> empties the app and keeps it installed. Uninstalling does the same and leaves nothing behind, because no copy exists anywhere else.</p>
+      <p>There is no account to close and nothing to ask us to erase, since we never had it.</p>
+    </div>
+
+    <div class="card">
+      <h3>I found something broken, or I want something added</h3>
+      <p>Both go to the same address above. Tell me what you expected to happen: that sentence is usually the whole bug report.</p>
+    </div>
+
+  </section>
+
+  <section id="it" lang="it">
+
+    <div class="card contact">
+      <p>Scrivi a <a href="mailto:farneti.aa@gmail.com">farneti.aa@gmail.com</a></p>
+      <p class="muted">Le legge una persona sola, quindi la risposta arriva in qualche giorno e non in qualche minuto. Dimmi che telefono hai e cosa stavi facendo: si risolve in uno scambio invece che in tre.</p>
+    </div>
+
+    <h2>Domande frequenti</h2>
+
+    <div class="card">
+      <h3>Dove finiscono i miei dati?</h3>
+      <p>Sul tuo telefono, e da nessun'altra parte. Vitae non ha account, non ha login e non ha un server. Niente di quello che scrivi viene spedito altrove, e questo vale anche per chi vende la pubblicità.</p>
+      <p>La conseguenza da sapere: non esiste una copia da cui recuperare. Fai un backup.</p>
+    </div>
+
+    <div class="card">
+      <h3>Come faccio un backup, o come passo a un telefono nuovo?</h3>
+      <p><kbd>Impostazioni</kbd> &rsaquo; <kbd>Dati</kbd> &rsaquo; <kbd>Esporta backup</kbd> scrive un unico file e lo passa alla condivisione del telefono, così lo metti dove tieni le tue cose.</p>
+      <p>Sul telefono nuovo, nella stessa schermata c'è <kbd>Importa backup</kbd>. Sostituisce quello che c'è nell'app, quindi conviene importare prima di cominciare a usarla, non dopo.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ho pagato per togliere la pubblicità ed è tornata</h3>
+      <p>Apri la schermata degli acquisti in-app e tocca <kbd>Ripristina l'acquisto</kbd>. L'acquisto è legato al tuo account dello store e non al telefono, quindi sopravvive a una reinstallazione, a un ripristino e a un dispositivo nuovo.</p>
+      <p>Se ti dice che non ha trovato niente, quasi sicuramente sei entrato con un account Google o Apple diverso da quello che ha pagato.</p>
+    </div>
+
+    <div class="card">
+      <h3>Le notifiche non arrivano</h3>
+      <p>Tre cose, nell'ordine in cui conviene guardarle:</p>
+      <p>1. Le notifiche devono essere permesse a Vitae nelle impostazioni del telefono. Un rifiuto dato alla prima richiesta resta.</p>
+      <p>2. Su Android, un promemoria a un orario preciso ha bisogno anche di <em>Sveglie e promemoria</em>, nelle impostazioni dell'app. Senza, Android lo consegna quando il telefono si sveglia, e può essere un'ora dopo.</p>
+      <p>3. Il risparmio energetico. Diversi produttori, fra cui Xiaomi, Huawei, Oppo e Samsung, bloccano le app in background per impostazione predefinita. Lì Vitae va esclusa a mano.</p>
+    </div>
+
+    <div class="card">
+      <h3>Il contapassi non mostra niente sul mio Android</h3>
+      <p>Non è rotto e non è colpa delle tue impostazioni: Android non ha modo di rispondere alla domanda. L'iPhone tiene il conto dei passi in un chip apposta e può essere interrogato su qualunque giorno passato. Android conta soltanto mentre qualcosa sta ascoltando, quindi un totale della giornata non esiste da leggere.</p>
+      <p>L'app te lo dice invece di mostrarti uno zero, perché uno zero si legge come "non ti sei mosso".</p>
+    </div>
+
+    <div class="card">
+      <h3>Posso cambiare lingua?</h3>
+      <p>Vitae segue la lingua del telefono ed è scritta per intero sia in italiano sia in inglese. Puoi anche sceglierla a mano in <kbd>Impostazioni</kbd> &rsaquo; <kbd>Lingua</kbd>.</p>
+    </div>
+
+    <div class="card">
+      <h3>Come cancello tutto?</h3>
+      <p><kbd>Impostazioni</kbd> &rsaquo; <kbd>Dati</kbd> &rsaquo; <kbd>Azzera tutto</kbd> svuota l'app lasciandola installata. Disinstallarla fa lo stesso e non lascia niente dietro, perché una copia altrove non esiste.</p>
+      <p>Non c'è nessun account da chiudere e niente da farci cancellare, visto che non l'abbiamo mai avuto.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ho trovato un problema, o vorrei che facesse una cosa in più</h3>
+      <p>Vanno tutti e due allo stesso indirizzo qui sopra. Dimmi cosa ti aspettavi che succedesse: quella frase di solito è già tutta la segnalazione.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p><a href="https://gist.github.com/Artolink/27347fd2b357109db2dd91ff5637a7e5">Privacy policy</a> &nbsp;&middot;&nbsp; <a href="https://github.com/Artolink/Vitae-Life-Organizer">About Vitae</a></p>
+    <p>&copy; Andrea Farneti</p>
+  </footer>
+
+</main>
+
+<script>
+  // Shown only once it can do something. Without this the page would offer a
+  // switch that does not switch, which is worse than offering nothing.
+  (function () {
+    var nav = document.getElementById('switch');
+    var sections = { en: document.getElementById('en'), it: document.getElementById('it') };
+    var buttons = nav.querySelectorAll('button');
+
+    function show(lang) {
+      sections.en.hidden = lang !== 'en';
+      sections.it.hidden = lang !== 'it';
+      document.documentElement.lang = lang;
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute('aria-pressed', String(buttons[i].dataset.lang === lang));
+      }
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function (event) {
+        show(event.currentTarget.dataset.lang);
+      });
+    }
+
+    nav.hidden = false;
+    // Italian for an Italian phone, English for everyone else, which is the
+    // same rule the app itself follows.
+    show((navigator.language || 'en').toLowerCase().indexOf('it') === 0 ? 'it' : 'en');
+  })();
+</script>
+
+</body>
+</html>
