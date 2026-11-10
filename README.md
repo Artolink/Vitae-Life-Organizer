@@ -24,11 +24,11 @@ Customizable. Offline. Yours.
 
 <br>
 
-<a href="#"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="60" alt="Get it on Google Play"></a>
+<a href="https://play.google.com/store/apps/details?id=com.artolink.vitae"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="60" alt="Get it on Google Play"></a>
 &nbsp;
-<a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="41" alt="Download on the App Store"></a>
+<a href="https://apps.apple.com/app/vitae-life-organizer/id6824678724"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="41" alt="Download on the App Store"></a>
 
-<sub>Android is in closed testing. iOS is on the way.</sub>
+<sub>Available now on Android and iOS.</sub>
 
 </div>
 
