@@ -1,0 +1,272 @@
+<!--
+  The terms of service for the public showcase repository, kept here beside
+  the support page for the same reason: it changes when the app changes.
+
+  It is not served from this repository: this one is private. Copy it into
+  Artolink/Vitae-Life-Organizer as `terms.html`, which GitHub Pages then
+  serves at https://artolink.github.io/Vitae-Life-Organizer/terms.html
+
+  Play asks for this once the developer account declares trader status, and
+  sets four conditions it is worth knowing are met here: a live HTTPS URL
+  with a valid certificate, reachable everywhere with no geofencing, an
+  ordinary web page rather than a PDF or a download, and written for this
+  app rather than borrowed. The last is why this exists at all instead of a
+  template: half of a generic one would describe a server Vitae does not
+  have.
+
+  Not legal advice and not reviewed by anybody qualified. It is an accurate
+  description of what the app does, which is the part a lawyer would
+  otherwise have to be told before writing one.
+
+  Same markup, styling and language switch as public-support.html, English
+  first because the listing default is en-US.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitae: Life Organizer, terms of service</title>
+<meta name="description" content="Terms of service for Vitae: Life Organizer.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #0B0C0F;
+    --card: #15171C;
+    --text: #F2F4F7;
+    --muted: #98A1AF;
+    --faint: #69707D;
+    --border: #252932;
+    --accent: #8B8AFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 40px; }
+  header img { width: 88px; height: 88px; border-radius: 20px; }
+  h1 { font-size: 26px; margin: 18px 0 6px; letter-spacing: -0.4px; }
+  .tagline { color: var(--muted); margin: 0; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--faint); margin: 44px 0 14px; }
+  h3 { font-size: 17px; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .contact { text-align: center; font-size: 18px; }
+  .muted { color: var(--muted); }
+  kbd {
+    font: inherit;
+    color: var(--text);
+    background: #1D2026;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
+  nav { text-align: center; margin-bottom: 36px; }
+  nav button {
+    font: inherit;
+    color: var(--muted);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  nav button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
+  footer { margin-top: 56px; text-align: center; color: var(--faint); font-size: 14px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <img src="icon.png" alt="Vitae">
+    <h1>Vitae: Life Organizer</h1>
+    <p class="tagline">Terms of service</p>
+  </header>
+
+  <nav hidden id="switch">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="it" aria-pressed="false">Italiano</button>
+  </nav>
+
+  <section id="en" lang="en">
+
+    <p class="muted">Last updated 10 November 2026. Vitae: Life Organizer is made and published by Andrea Farneti. Installing or using it means accepting what is written here.</p>
+
+    <h2>What the app is</h2>
+
+    <div class="card">
+      <p>Vitae is an organiser you keep on your phone. It holds activities, habits, goals and records across the areas of life you switch on, and it does all of that on the device itself.</p>
+      <p>There is no account, no sign-in and no server. Nothing you write is sent anywhere.</p>
+    </div>
+
+    <h2>Your data, and the one consequence</h2>
+
+    <div class="card">
+      <p>Everything you enter stays in the app's own storage on your phone. It is yours, it is not read by anybody else, and it is not shared with the advertiser. The <a href="https://gist.github.com/Artolink/27347fd2b357109db2dd91ff5637a7e5">privacy policy</a> says the same thing in the detail a store asks for.</p>
+      <p>The consequence worth stating plainly: because no copy exists anywhere else, deleting the app deletes your data, and nobody can get it back for you. The app can write a backup file whenever you ask it to, and that file is yours to keep.</p>
+    </div>
+
+    <h2>Adverts and the purchase</h2>
+
+    <div class="card">
+      <p>The app shows occasional adverts through Google AdMob. One in-app purchase removes them permanently.</p>
+      <p>The purchase is handled entirely by the App Store or Google Play, not by this app: payment, receipts and refunds are between you and the store, under the store's own rules. The app is told one thing, that the purchase exists, and then stops showing adverts.</p>
+      <p>If you reinstall or change phone, the same screen offers to restore it.</p>
+    </div>
+
+    <h2>What the app is not</h2>
+
+    <div class="card">
+      <p>Vitae is not a medical device and gives no medical advice. It records what you tell it and does arithmetic on it. Figures such as the calorie estimate come from published formulas, which are averages and were never about you; the app says where each one comes from, on its own page inside it.</p>
+      <p>Nothing in it is financial, legal or professional advice either. Decisions about your health or your money are yours, and worth taking with somebody qualified.</p>
+    </div>
+
+    <h2>Using it fairly</h2>
+
+    <div class="card">
+      <p>You may use the app on your own devices, for as long as you like. You may not resell it, copy it, take it apart to rebuild it, or pass off its contents as your own.</p>
+      <p>The app's own words, drawings and code remain the author's. What you write in it remains yours.</p>
+    </div>
+
+    <h2>No guarantee</h2>
+
+    <div class="card">
+      <p>The app is provided as it is. It is made with care and tested, and it can still contain mistakes, lose work in a crash, or stop working after a change to your phone's operating system.</p>
+      <p>So it is not offered with a promise that it will suit a particular purpose or run without fault, and the author is not liable for loss arising from using it. Nothing here removes rights the law gives you as a consumer, which in the European Union are not ours to remove.</p>
+    </div>
+
+    <h2>Changes, and ending</h2>
+
+    <div class="card">
+      <p>The app changes: features arrive, and occasionally one is withdrawn. These terms may change with it, and the date at the top says when they last did.</p>
+      <p>You can stop at any time by deleting the app. A purchase already made stays with your store account.</p>
+    </div>
+
+    <h2>Which law, and who to write to</h2>
+
+    <div class="card">
+      <p>These terms are governed by Italian law. If you live in the European Union, you keep the protection of your own country's consumer law.</p>
+      <p>Questions, including about these terms: <a href="mailto:farneti.aa@gmail.com">farneti.aa@gmail.com</a></p>
+    </div>
+
+  </section>
+
+  <section id="it" lang="it" hidden>
+
+    <p class="muted">Ultimo aggiornamento 10 novembre 2026. Vitae: Life Organizer è realizzata e pubblicata da Andrea Farneti. Installarla o usarla significa accettare quanto scritto qui.</p>
+
+    <h2>Cos'è l'app</h2>
+
+    <div class="card">
+      <p>Vitae è un organizzatore che tieni sul telefono. Raccoglie attività, abitudini, obiettivi e registrazioni nelle aree della vita che accendi, e fa tutto questo sul dispositivo stesso.</p>
+      <p>Non c'è nessun account, nessun accesso e nessun server. Niente di quello che scrivi viene mandato da qualche parte.</p>
+    </div>
+
+    <h2>I tuoi dati, e l'unica conseguenza</h2>
+
+    <div class="card">
+      <p>Tutto quello che inserisci resta nella memoria dell'app sul tuo telefono. È tuo, non lo legge nessun altro e non viene condiviso con l'inserzionista. L'<a href="https://gist.github.com/Artolink/27347fd2b357109db2dd91ff5637a7e5">informativa sulla privacy</a> dice la stessa cosa nel dettaglio che uno store richiede.</p>
+      <p>La conseguenza da dire chiaramente: siccome non esiste copia da nessun'altra parte, disinstallare l'app cancella i tuoi dati, e nessuno può ridarteli. L'app sa scrivere un file di backup ogni volta che glielo chiedi, e quel file è tuo.</p>
+    </div>
+
+    <h2>Pubblicità e acquisto</h2>
+
+    <div class="card">
+      <p>L'app mostra qualche pubblicità tramite Google AdMob. Un acquisto in-app le toglie per sempre.</p>
+      <p>L'acquisto lo gestiscono interamente App Store o Google Play, non quest'app: pagamento, ricevute e rimborsi sono fra te e lo store, secondo le regole dello store. All'app viene detta una cosa sola, che l'acquisto esiste, e da lì smette di mostrare pubblicità.</p>
+      <p>Se reinstalli o cambi telefono, la stessa schermata ti propone di ripristinarlo.</p>
+    </div>
+
+    <h2>Cosa l'app non è</h2>
+
+    <div class="card">
+      <p>Vitae non è un dispositivo medico e non dà consigli medici. Registra quello che le dici e ci fa dei calcoli. Numeri come la stima delle calorie vengono da formule pubblicate, che sono medie e non hanno mai riguardato te; l'app dice da dove viene ciascuna, in una pagina sua.</p>
+      <p>Non è nemmeno consulenza finanziaria, legale o professionale. Le decisioni sulla tua salute o sui tuoi soldi sono tue, e vale la pena prenderle con qualcuno di competente.</p>
+    </div>
+
+    <h2>Usarla correttamente</h2>
+
+    <div class="card">
+      <p>Puoi usare l'app sui tuoi dispositivi, per tutto il tempo che vuoi. Non puoi rivenderla, copiarla, smontarla per rifarla, o spacciarne i contenuti per tuoi.</p>
+      <p>Le parole, i disegni e il codice dell'app restano dell'autore. Quello che ci scrivi dentro resta tuo.</p>
+    </div>
+
+    <h2>Nessuna garanzia</h2>
+
+    <div class="card">
+      <p>L'app è fornita così com'è. È fatta con cura e collaudata, e può comunque contenere errori, perdere del lavoro in un blocco, o smettere di funzionare dopo un aggiornamento del sistema del telefono.</p>
+      <p>Quindi non è offerta con la promessa che sia adatta a uno scopo particolare o che funzioni senza difetti, e l'autore non risponde delle perdite derivanti dall'uso. Niente di quanto scritto qui toglie i diritti che la legge ti riconosce come consumatore, che nell'Unione Europea non sono nostri da togliere.</p>
+    </div>
+
+    <h2>Modifiche, e smettere</h2>
+
+    <div class="card">
+      <p>L'app cambia: arrivano funzioni e ogni tanto qualcuna viene tolta. Questi termini possono cambiare con lei, e la data in cima dice quando è successo l'ultima volta.</p>
+      <p>Puoi smettere quando vuoi disinstallando l'app. Un acquisto già fatto resta legato al tuo account dello store.</p>
+    </div>
+
+    <h2>Quale legge, e a chi scrivere</h2>
+
+    <div class="card">
+      <p>Questi termini sono regolati dalla legge italiana. Se vivi nell'Unione Europea mantieni la tutela della legge del tuo paese in materia di consumatori.</p>
+      <p>Domande, anche su questi termini: <a href="mailto:farneti.aa@gmail.com">farneti.aa@gmail.com</a></p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p><a href="./">Support</a> &nbsp;&middot;&nbsp; <a href="https://gist.github.com/Artolink/27347fd2b357109db2dd91ff5637a7e5">Privacy</a></p>
+  </footer>
+
+</main>
+
+<script>
+  // Shown only once it can do something. Without this the page would offer a
+  // switch that does not switch, which is worse than offering nothing.
+  (function () {
+    var nav = document.getElementById('switch');
+    var sections = { en: document.getElementById('en'), it: document.getElementById('it') };
+    var buttons = nav.querySelectorAll('button');
+
+    function show(lang) {
+      sections.en.hidden = lang !== 'en';
+      sections.it.hidden = lang !== 'it';
+      document.documentElement.lang = lang;
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute('aria-pressed', String(buttons[i].dataset.lang === lang));
+      }
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function (event) {
+        show(event.currentTarget.dataset.lang);
+      });
+    }
+
+    nav.hidden = false;
+    // Italian for an Italian phone, English for everyone else, which is the
+    // same rule the app itself follows.
+    show((navigator.language || 'en').toLowerCase().indexOf('it') === 0 ? 'it' : 'en');
+  })();
+</script>
+
+</body>
+</html>
